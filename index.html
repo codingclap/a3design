@@ -645,9 +645,9 @@
 
     </section><!-- /Call To Action Section -->
 
-<!---------------------------------------------- Client Works --------------------------------->
- 
-<!---------------------------------------------- Client Works --------------------------------->
+    <!---------------------------------------------- Client Works --------------------------------->
+
+    <!---------------------------------------------- Client Works --------------------------------->
 
 
 
@@ -659,6 +659,104 @@
         <h2>Portfolio</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
+
+      <link rel="stylesheet" href="assets/css/tabs-slider.css">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="category-lists-slider">
+              <div class="swiper-container" id="catgory-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data1">
+                      1. Appliances
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data2">
+                      2. Baby
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data3">
+                      3. Bags, Wallets and Luggage
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data4">
+                      4. Beauty
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data5">
+                      5. Books
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data6">
+                      6. Motorbike
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data7">
+                      7. Clothing & Accessories
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data8">
+                      8. Collectibles & Fine Art
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data9">
+                      9. Computers & Accessories
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="category-button" data-id="data10">
+                      10. Electronics
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="slider-button slider-prev"><i class="fa fa-chevron-left"></i></div>
+              <div class="slider-button slider-next"><i class="fa fa-chevron-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+      <script>
+        // ----------swiper-slider---------
+        var swiper = '';
+        $(window).on('load', function () {
+          swiper = new Swiper('#catgory-slider', {
+            loop: false,
+            slidesPerView: "auto",
+            allowTouchMove: true,
+            spaceBetween: 5,
+            mousewheel: true,
+            slideToClickedSlide: true,
+            centeredSlides: false,
+            navigation: {
+              nextEl: '.slider-next',
+              prevEl: '.slider-prev',
+            }
+          });
+        });
+
+
+        $(".category-button").click(function () {
+          $(".category-button").removeClass("active");
+          $(this).addClass('active');
+          var getid = $(this).data('id');
+          $(".data-text").removeClass('active');
+          $("#" + getid).addClass("active");
+        });
+
+      </script>
+
 
       <div class="container">
 

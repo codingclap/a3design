@@ -1,10 +1,10 @@
 
-.otherDetails{padding: 40px 0px;background-color: #f8f8f8;}
+.otherDetails{padding:60px 0px 40px 0px;background-color: #f8f8f8;}
 .otherDetails ul{display: flex;align-items: center;margin-bottom: 0rem;    padding-left: 0;}
 .otherDetails li{padding:0px 0px 0px 80px;width: 100%;border-left: 0.5px solid #808276;display: flex;align-items: center;}
 .otherDetails li:first-child{padding-left: 0;border: none;}
 .otherDetails li figure{margin-right: 10px;width: 45px;height: 45px; margin: 0 1rem 0px 0rem;}
-.otherDetails li label{display: block;font-size: 22px;color: #808276;font-weight: bold;    line-height: 15px;}
+.otherDetails li label{display: block;font-size: 22px;color: #808276;font-weight: bold;line-height: 15px;}
 .otherDetails li span{ color: #808276;font-size: 14px;}
 .otherDetails li img{object-fit: contain;width: 100%;height: 100%;}
 
