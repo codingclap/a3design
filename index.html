@@ -661,107 +661,78 @@
       </div><!-- End Section Title -->
 
       <link rel="stylesheet" href="assets/css/tabs-slider.css">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <div class="category-lists-slider">
-              <div class="swiper-container" id="catgory-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data1">
-                      1. Appliances
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data2">
-                      2. Baby
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data3">
-                      3. Bags, Wallets and Luggage
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data4">
-                      4. Beauty
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data5">
-                      5. Books
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data6">
-                      6. Motorbike
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data7">
-                      7. Clothing & Accessories
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data8">
-                      8. Collectibles & Fine Art
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data9">
-                      9. Computers & Accessories
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="category-button" data-id="data10">
-                      10. Electronics
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-              <div class="slider-button slider-prev"><i class="fa fa-chevron-left"></i></div>
-              <div class="slider-button slider-next"><i class="fa fa-chevron-right"></i></div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
-      <script>
-        // ----------swiper-slider---------
-        var swiper = '';
-        $(window).on('load', function () {
-          swiper = new Swiper('#catgory-slider', {
-            loop: false,
-            slidesPerView: "auto",
-            allowTouchMove: true,
-            spaceBetween: 5,
-            mousewheel: true,
-            slideToClickedSlide: true,
-            centeredSlides: false,
-            navigation: {
-              nextEl: '.slider-next',
-              prevEl: '.slider-prev',
-            }
-          });
-        });
 
 
-        $(".category-button").click(function () {
-          $(".category-button").removeClass("active");
-          $(this).addClass('active');
-          var getid = $(this).data('id');
-          $(".data-text").removeClass('active');
-          $("#" + getid).addClass("active");
-        });
-
-      </script>
 
 
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <div class="container" >
+            <div class="row justify-content-center">
+              <div class="col-10 col-md-12">
+                <div class="category-lists-slider">
+                  <div class="swiper-containers" id="catgory-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide  portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100"">
+                        <div class="category-button filter-active" data-filter="*"  >
+                          1. Appliances
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-filter=".filter-app" >
+                          2. Baby
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data3">
+                          3. Bags, Wallets and Luggage
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data4">
+                          4. Beauty
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data5">
+                          5. Books
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data6">
+                          6. Motorbike
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data7">
+                          7. Clothing & Accessories
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data8">
+                          8. Collectibles & Fine Art
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data9">
+                          9. Computers & Accessories
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="category-button" data-id="data10">
+                          10. Electronics
+                        </div>
+                      </div>
 
+                    </div>
+                  </div>
+                  <div class="slider-button slider-prev"><i class="fa fa-chevron-left"></i></div>
+                  <div class="slider-button slider-next"><i class="fa fa-chevron-right"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
@@ -1223,6 +1194,36 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+
+  <script>
+    // ----------swiper-slider---------
+    var swiper1 = '';
+    $(window).on('load', function () {
+      swiper1 = new Swiper('#catgory-slider', {
+        loop: false,
+        slidesPerView: "auto",
+        allowTouchMove: true,
+        spaceBetween: 5,
+        mousewheel: true,
+        slideToClickedSlide: true,
+        centeredSlides: false,
+        navigation: {
+          nextEl: '.slider-next',
+          prevEl: '.slider-prev',
+        }
+      });
+    });
+
+
+    $(".category-button").click(function () {
+      $(".category-button").removeClass("active");
+      $(this).addClass('active');
+      var getid = $(this).data('id');
+      $(".data-text").removeClass('active');
+      $("#" + getid).addClass("active");
+    });
+
+  </script>
   <script>
     // HERO SLIDER
     var menu = [];
@@ -1290,6 +1291,7 @@
     });
 
   </script>
+
 
 
 
