@@ -23,7 +23,7 @@
   /* Background color for the entire website, including individual sections */
   --default-color: #444444;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #124265;
+  --heading-color: #7F8276;
   /* Color for headings, subheadings and title throughout the website */
   --accent-color: #7F8276;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -56,7 +56,10 @@
   color:#35b1bb
 
 }
- 
+[data-color="white"]{
+  color:#fff
+
+}
  
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
@@ -100,7 +103,10 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
-
+p{
+  color:#7F8276;
+  font-size: 15px;
+}
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -285,7 +291,7 @@ h6 {
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background: #35b1bb;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -992,8 +998,8 @@ section,
   color: var(--accent-color);
 }
 
-.about .read-more {
-  background: var(--accent-color);
+.read-more {
+  background: #35b1bb;
   color: var(--contrast-color);
   font-family: var(--heading-font);
   font-weight: 500;
@@ -1007,20 +1013,22 @@ section,
   justify-content: center;
 }
 
-.about .read-more i {
+.read-more i {
   font-size: 18px;
   margin-left: 5px;
   line-height: 0;
   transition: 0.3s;
 }
 
-.about .read-more:hover {
+.read-more:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color:#fff
 }
 
-.about .read-more:hover i {
+.read-more:hover i {
   transform: translate(5px, 0);
 }
+
 
 /*--------------------------------------------------------------
 # Stats Section

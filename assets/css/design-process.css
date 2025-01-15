@@ -3,11 +3,27 @@
 .f600{font-weight: 600;}
 .f900{font-weight: 900;}
 .fbold{font-weight: bold;}
+.grid5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+.plr {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.mt16 {
+    margin-top: 16px;
+}
+.mb12 {
+    margin-bottom: 12px;
+}
+.displayGrid {
+    display: grid;
+}
 .mb16 {
     margin-bottom: 16px;
 }
-.ourServices{padding: 60px 0px;background-color: #f8f8f8;;}
-.ourServices p{font-size: 14px;color:#7F8276}
+.designProcess{padding: 60px 0px;background-color: #f8f8f8;;}
+.designProcess p{font-size: 15px;color:#7F8276}
 .heading{line-height: normal;}
 .trunkeyIn{display: flex;gap: 24px;}
 .trunkeyIn .services{padding: 25px;width: 100%;background-color: #fff;border-radius: 10px;display: flex;gap: 30px;}
@@ -24,7 +40,7 @@
 
 
 @media screen and (max-width:540px){
-    .ourServices{padding: 40px 0px;}
+    .designProcess{padding: 40px 0px;}
 	.subHeading{margin-bottom: 24px;}
     .trunkeyIn{flex-direction: column;}
     .trunkeyIn .services{padding: 15px;flex-direction: column-reverse;text-align: center;align-items: center;}
@@ -40,21 +56,30 @@
 
 
 .trunkeyUae{display: grid;grid-template-columns: repeat(4,1fr);gap: 24px;}
-.headingBx{  padding: 24px;border-radius: 10px;background-color: #ffe5ea;display: flex;justify-content: space-between;flex-direction: column;height: 340px;}
+.headingBx{  padding: 24px;border-radius: 10px;background-color: #ffe5ea;display: flex;justify-content: space-between;flex-direction: column;height: 400px;}
 .trunkeyUae svg{stroke: #35b1bb;}
 .turknyKnowMore{color: #35b1bb;text-transform: uppercase;cursor: pointer;}
 .turknyKnowMore em{margin-left: 5px;}
 .designBx{  padding: 24px 20px;border-radius: 10px;background-color: #fff;text-align: center;}
 .designBx figure{display: flex;align-items: center;justify-content: center;}
 .designBx .designBxlabel{display: block;}
-
+@media screen and (max-width:991px){
+    .trunkeyUae { 
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .designBx { 
+        width: 100%;
+        max-width: 350px;
+    }
+}
 @media screen and (max-width:540px){
     .trunkeyUae{display: flex;flex-direction: column;gap: 15px;}    
     .trunkeyUae .heading{font-weight: bold;}
     .trunkeyUae .subHeading{margin-bottom: 16px;}
     .headingBx{height: inherit;}
     .turknyKnowMore{display: block;text-align: center;}
-    .designBx img{max-height: 80px;  }
+    .designBx{max-width: inherit; }
+    /* .designBx img{max-height: 80px; } */
 }
 
 
