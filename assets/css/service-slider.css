@@ -1,0 +1,110 @@
+.service-slider-logo {
+    top: 0;
+    width: 100%;
+    z-index: +999;
+    display: flex;
+    height: 100%;
+  }
+
+  .service-slider-logo img.slide-image {
+    width: 100%;
+    max-width: 70px;
+    position: absolute;
+    transition: all 0.9s ease-in-out;
+  }
+
+  .service-slider .owl-item {
+    overflow: hidden;
+  }
+
+  .service-slider-image {
+    filter: grayscale(100%);
+    transition: all 0.8s ease-in-out;
+   
+  }
+
+  .service-slider-image:hover {
+    filter: grayscale(0%);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .service-slider-image::after{
+    content:" ";
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    transition: all 0.8s ease-in-out;
+    top: 0;
+    backdrop-filter: blur(0px);
+  }
+  .service-slider-image:hover::after{
+    background-color: rgba(0, 0, 0, 0.329);
+    transition: all 0.8s ease-in-out; 
+    backdrop-filter: blur(2px);
+    z-index: 0;
+  }
+
+  .service-slider-image:hover .slide-image:nth-of-type(1) {
+    transform: translateX(-400px);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .service-slider-image:hover .slide-image:nth-of-type(2) {
+    transform: translateX(400px);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .service-slider-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+  }
+
+  .service-slider-text .heading {
+    opacity: 0;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .service-slider-text p {
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    /* transform: translateY(100px); */
+  }
+
+  /* .service-slider-image:hover  {
+  transform: scale(1.5);
+} */
+
+  .service-slider-image:hover p {
+    opacity: 0;
+    /* transform: translateY(0px); */
+    transition: all 0.9s ease-in-out;
+    backdrop-filter: blur(5px);
+  }
+
+  .service-slider-image:hover .heading {
+    opacity: 1;
+    transition: all 0.9s ease-in-out;
+    z-index: +999;
+  }
+
+  .service-slider-image img {
+    transition: all 0.9s ease-in-out;
+  }
+
+  .service-slider-image:hover img {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.0456);
+
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    background: #fff;
+    padding: 40px 0px 10px 0px;
+    margin-top: 0px;
+    display: none;
+  }
