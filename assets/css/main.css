@@ -12,9 +12,9 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Poppins";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Lato", serif;
+  --heading-font: "Lato", serif;
+  --nav-font: "Lato", serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -105,7 +105,7 @@ body {
 }
 p{
   color:#7F8276;
-  font-size: 15px;
+  font-size: 16px;  
 }
 a {
   color: var(--accent-color);
@@ -734,7 +734,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #35b1bb;
   width: 40px;
   height: 40px;
   border-radius: 4px;
