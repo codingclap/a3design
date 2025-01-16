@@ -6,7 +6,7 @@
 }
 .faqs .accordion-button:not(.collapsed) {
     color: #ffffff;
-    background-color: #7f8276;
+    background-color: #35b1bb;
 }
 .faqs .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 8H14'/%3e%3c/svg%3e");
@@ -17,4 +17,13 @@
 .faqs .accordion-item:not(:first-of-type) {
     border: var(--bs-accordion-border-width) solid
         var(--bs-accordion-border-color);
+}
+
+.accordion-button { 
+    background-color: #ffe5ea;
+}
+
+.accordion {
+    
+    --bs-accordion-bg: #ffe5ea;
 }

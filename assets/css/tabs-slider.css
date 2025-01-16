@@ -30,7 +30,7 @@
      line-height: 38px;
      cursor: pointer;
      font-size: 14px;
-     background: #eee;
+     background: #a2a2972e;
  }
 
  .category-button.active {
@@ -62,7 +62,7 @@
  .slider-button {
      width: 40px;
      height: 40px;
-     background-color: #f9f9f9;
+     background-color: #a2a2972e;
      border-radius: 5px;
      /* color: #fff; */
      display: flex;
@@ -70,7 +70,7 @@
      justify-content: center;
      font-size: 12px;
      position: absolute;
-     top: 0;
+     top: -1px;
      z-index: 1;
      cursor: pointer;
      transition: .3s;

@@ -22,7 +22,7 @@
 .mb16 {
     margin-bottom: 16px;
 }
-.designProcess{padding: 60px 0px;background-color: #f8f8f8;;}
+.designProcess{padding: 60px 0px;background-color: #fef8f0;}
 .designProcess p{font-size: 16px;color:#7F8276}
 .heading{line-height: normal;}
 .trunkeyIn{display: flex;gap: 24px;}
@@ -56,11 +56,12 @@
 
 
 .trunkeyUae{display: grid;grid-template-columns: repeat(4,1fr);gap: 24px;}
-.headingBx{  padding: 24px;border-radius: 10px;background-color: #ffe5ea;display: flex;justify-content: space-between;flex-direction: column;height: 400px;}
+.headingBx{  padding: 24px;border-radius: 10px;background-color: #ffe5ea9f;display: flex;justify-content: space-between;flex-direction: column;height: 400px;}
 .trunkeyUae svg{stroke: #35b1bb;}
-.turknyKnowMore{color: #35b1bb;text-transform: uppercase;cursor: pointer;}
-.turknyKnowMore em{margin-left: 5px;}
-.designBx{  padding: 24px 20px;border-radius: 10px;background-color: #fff;text-align: center;}
+.turknyKnowMore{color: #35b1bb;cursor: pointer;}
+.turknyKnowMore em{margin-left: 5px;
+    margin-top: 4px;}
+.designBx{  padding: 24px 20px;border-radius: 10px;background-color: #ffe5ea9f;text-align: center;}
 .designBx figure{display: flex;align-items: center;justify-content: center;}
 .designBx .designBxlabel{display: block;}
 @media screen and (max-width:991px){

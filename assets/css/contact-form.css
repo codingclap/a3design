@@ -11,13 +11,24 @@
     background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.form-control {
+    color: #7F8276;
+}
+
 .contactPage .form-control:focus {
-    color: #212529;
-    background-color: #fff!important;
-    border-color: #212529!important;
+    color: #7F8276;
+    background-color: #fef8f0 !important;
+    border-color: #7F8276 !important;
     outline: 0;
     box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
-   
+
+}
+
+.form-floating>.form-control-plaintext~label::after,
+.form-floating>.form-control:focus~label::after,
+.form-floating>.form-control:not(:placeholder-shown)~label::after,
+.form-floating>.form-select~label::after {
+    background-color: #fef8f0;
 }
 
 .aspect4-3 {
